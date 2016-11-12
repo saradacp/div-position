@@ -1,0 +1,25 @@
+.main-div, .sub-div {
+  border: solid 1px grey;
+  min-height: 150px;
+}
+.sub-div {
+
+}
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: wrap-reverse;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+}
+.flex-div {
+    width: 200px;
+    height:200px;
+}
