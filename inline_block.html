@@ -1,0 +1,58 @@
+
+<!-- saved from url=(0047)file:///Users/scheru1/Desktop/inline_block.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <style>
+    .inline-div {
+      width:100px;
+      height:100px;
+      display:inline-block;
+      border: solid 1px black;
+    }
+    .block-span {
+      width:100px;
+      height:100px;
+      display:block;
+      border: solid 1px blue;
+    }
+    .inline-block-span {
+      width:100px;
+      height:100px;
+      display:inline-block;
+      border: solid 1px red;
+    }
+    .inline-block-div {
+        display:inline;
+        width:100px;/* no effect */
+        height:100px;/* no effect */
+        border: solid 1px red;
+    }
+  </style>
+  </head>
+  <body>
+      <div>Natural block DIV1 </div>
+      <div>Natural block DIV2 </div>
+
+      <div>
+        <div class="inline-block-div">First inline  DIV</div>
+        <div class="inline-block-div">Second inline  DIV</div>
+        <div class="inline-block-div">Third inline  DIV</div>
+      </div>
+
+      
+      <div class="inline-div">First inline block DIV</div>
+      <div class="inline-div">Second inline block DIV</div>
+      <div class="inline-div">Third inline block DIV</div>
+
+
+      <div>
+        <span> Natural inline span1  </span>
+        <span> Natural inline span2  </span>
+        <span class="block-span">  span1 with block </span>
+        <span class="block-span">  span2 with block  </span>
+
+        <span class="inline-block-span">  span1 with inline block </span>
+        <span class="inline-block-span">  span2 with inline block  </span>
+      </div>
+  
+
+</body></html>
